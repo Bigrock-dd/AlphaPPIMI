@@ -24,7 +24,11 @@ This repository contains the code and data for our paper "[**AlphaPPIMI: A Compr
 
 ## Data
 
-[DiPPI](http://interactome.ku.edu.tr:8501/)
+[DiPPI:Drugs in Protein-Protein Interfaces](http://interactome.ku.edu.tr:8501/)  
+
+[DLiP:Database of Chemical Library for Protein-Protein Interaction](https://skb-insilico.com/dlip)  
+
+[iPPI-DB: database of modulators of protein-protein interactions](https://ippidb.pasteur.fr/)  
 
 
 ## Requirements
