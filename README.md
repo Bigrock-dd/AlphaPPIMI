@@ -9,7 +9,7 @@ This repository contains the code and data for our paper "[**AlphaPPIMI: A Compr
 
 
 
-## Framework of AlphaPPIMI
+## Model Architecture of AlphaPPIMI
 
 
 
