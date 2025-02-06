@@ -24,7 +24,7 @@ This repository contains the code and data for our paper "[**AlphaPPIMI: A Compr
 
 ## Data
 
-
+[DiPPI](http://interactome.ku.edu.tr:8501/)
 
 
 ## Requirements
