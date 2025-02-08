@@ -11,7 +11,9 @@ This repository contains the code and data for our paper "[**AlphaPPIMI: A Compr
 
 ## Model Architecture of AlphaPPIMI
 
-
+<div align="center">
+  <img src="image/AlphaPPIMI_framework.png" alt="AlphaPPIMI Architecture" width="800">
+</div>
 
 
 ## Acknowledgements
@@ -22,20 +24,63 @@ This repository contains the code and data for our paper "[**AlphaPPIMI: A Compr
 
 under review ！！！  
 
+## Requirements
+```
+#Basic dependencies
+numpy>=1.21.0
+pandas>=1.3.0
+torch>=1.9.0
+torch-geometric>=2.0.0
+scikit-learn>=0.24.0
+tqdm>=4.62.0
+#Molecular processing
+rdkit>=2022.03.1
+#Deep learning models
+transformers>=4.12.0
+fair-esm>=2.0.0
+protbert>=0.1.0
+```
 
 ## Data
 
-[DiPPI:Drugs in Protein-Protein Interfaces](http://interactome.ku.edu.tr:8501/)  
-
-[DLiP:Database of Chemical Library for Protein-Protein Interaction](https://skb-insilico.com/dlip)  
-
-[iPPI-DB: database of modulators of protein-protein interactions](https://ippidb.pasteur.fr/)  
 
 
-## Requirements
-```python
+The original datasets can be found or downloaded from the following sources:
 
+- [DiPPI: Drugs in Protein-Protein Interfaces](http://interactome.ku.edu.tr:8501/)  
+- [DLiP: Database of Chemical Library for Protein-Protein Interaction](https://skb-insilico.com/dlip)  
+- [iPPI-DB: Database of Modulators of Protein-Protein Interactions](https://ippidb.pasteur.fr/)
+
+Note: Processed data will be made available upon paper acceptance.
+
+
+## Usage
+The code will be made available upon paper acceptance. The framework supports two training modes:
+
+### Standard Training Mode
+In standard training mode, we evaluate the model using two data split strategies:
+
+1. Random Split (random pairs of compounds and proteins):
 ```
+python main.py --fold 1 --eval_setting random --batch_size 64  --epochs 200
+```
+2. Cold-pair Split (unseen compounds or proteins):
+```
+python main.py --fold 1 --eval_setting cold --batch_size 64  --epochs 200
+```
+
+### Domain Adaptation Mode
+For domain adaptation, the data is divided into source and target domains. You can train the model with different target datasets:
+
+For example, using DiPPI as target domain:
+```
+python main.py --fold 1  --use_domain_adaptation --target_dataset DiPPI
+```
+Key arguments:
+- `--fold`: Fold number for cross validation
+- `--eval_setting`: Data split strategy [random/cold]
+- `--target_dataset`: Target domain selection [DiPPI/iPPIDB]
+- `--use_domain_adaptation`: Use domain_adaptation for training
 
 
 ## License
