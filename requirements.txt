@@ -1,0 +1,13 @@
+# Basic dependencies
+numpy>=1.21.0
+pandas>=1.3.0
+torch>=1.9.0
+torch-geometric>=2.0.0
+scikit-learn>=0.24.0
+tqdm>=4.62.0
+# Molecular processing
+rdkit>=2022.03.1
+# Deep learning models dependencies
+transformers>=4.12.0  # For ESM-2 model
+fair-esm>=2.0.0      # For ESM-2 model
+protbert>=0.1.0      # For ProtTrans model
