@@ -64,7 +64,7 @@ In standard training mode, we evaluate the model using two data split strategies
 ```
 python main.py --fold 1 --eval_setting random --batch_size 64  --epochs 200
 ```
-2. Cold-pair Split (unseen compounds or proteins):
+2. Cold-pair Split (unseen compounds and proteins):
 ```
 python main.py --fold 1 --eval_setting cold --batch_size 64  --epochs 200
 ```
