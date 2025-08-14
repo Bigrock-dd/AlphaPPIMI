@@ -1,5 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/Bigrock-dd/AlphaPPIMI)
-[![ J. Cheminform.](https://img.shields.io/badge/%20J.%20Cheminform.%20(2025)-red)](https://github.com/Bigrock-dd/AlphaPPIMI)
+[![ J. Cheminform.](https://img.shields.io/badge/%20J.%20Cheminform.%20(2025)-red)](https://doi.org/10.1186/s13321-025-01077-2)
 
 
 This repository contains the code and data for our paper "**AlphaPPIMI: A Comprehensive Deep Learning Framework for Predicting PPI-Modulator Interactions**".
